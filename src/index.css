@@ -1,0 +1,10 @@
+/* body {
+  height: 100vh;
+  background: linear-gradient(
+    75deg,
+    #e5e5e5 50%,
+    black 50%
+  );
+} */
+
+@import "tailwindcss";
