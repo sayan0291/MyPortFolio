@@ -15,13 +15,15 @@ export default function About(){
             md: "20px",
             lg: "22px"
         },
+        color: "#635E87",
         fontWeight: "bold"
     }
 
     const pstyle = {
         fontFamily: "Open Sans",
-        fontSize: "12px",
-        fontWeight: "light"
+        fontSize: "14px",
+        fontWeight: "light",
+        color: "#013DC4"
     }
 
     return(
@@ -32,7 +34,11 @@ export default function About(){
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: "40px"
+                gap: {
+                    xs: "15px",
+                    sm: "17px",
+                    md: "20px"
+                }
             }}>
                 <Box sx={{
                     display: "flex",
@@ -41,7 +47,11 @@ export default function About(){
                         xs: "column"
                     },
                     alignItems: "center",
-                    gap: "40px"
+                    gap: {
+                        xs: "15px",
+                        sm: "17px",
+                        md: "20px"
+                    }
                 }}>
                     <Box className="w-80">
                         <Box className="flex items-center">
@@ -66,7 +76,7 @@ export default function About(){
                     <Typography sx={pstyle}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Typography>
                 </Box>
             </Box>
-            <Box sx={{width: "100%",display: "flex",justifyContent: "center",padding: "50px"}}>
+            <Box sx={{width: "100%",display: "flex",justifyContent: "center",padding: "50px 0 0 0"}}>
                 <Box component="img" src='/src/assets/separatorBlack 1.png' sx={{}}/>
             </Box>
         </Box>
