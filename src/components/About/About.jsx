@@ -1,30 +1,9 @@
 import {Box,Typography} from '@mui/material'
 import SectionHeading from '../SectionHeading'
+import { aboutContent } from '../Other'
+import AboutContent from './AboutContent'
 
 export default function About(){
-
-    const imagestyle = {
-        width: "40px"
-    }
-
-    const h3style = {
-        fontFamily: "Montserrat",
-        fontSize: {
-            xs: "17px",
-            sm: "18px",
-            md: "20px",
-            lg: "22px"
-        },
-        color: "#635E87",
-        fontWeight: "bold"
-    }
-
-    const pstyle = {
-        fontFamily: "Open Sans",
-        fontSize: "14px",
-        fontWeight: "light",
-        color: "#013DC4"
-    }
 
     return(
         <Box>
@@ -53,28 +32,10 @@ export default function About(){
                         md: "20px"
                     }
                 }}>
-                    <Box className="w-80">
-                        <Box className="flex items-center">
-                            <Box component="img" src='/src/assets/design.png' sx={imagestyle} />
-                            <Typography sx={h3style}>DESIGN</Typography>
-                        </Box>
-                        <Typography sx={pstyle}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Typography>
-                    </Box>
-                    <Box className="w-80">
-                        <Box className="flex items-center">
-                            <Box component="img" src='/src/assets/developement.png' sx={imagestyle} />
-                            <Typography sx={h3style}>DEVELOPEMENT</Typography>
-                        </Box>
-                        <Typography sx={pstyle}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Typography>
-                    </Box>
+                    <AboutContent aboutid={1}/>
+                    <AboutContent aboutid={2}/>
                 </Box>
-                <Box className="w-80">
-                    <Box className="flex items-center">
-                        <Box component="img" src='/src/assets/maintainance.png' sx={imagestyle} />
-                        <Typography sx={h3style}>MAINTAINANCE</Typography>
-                    </Box>
-                    <Typography sx={pstyle}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Typography>
-                </Box>
+                <AboutContent aboutid={3}/>
             </Box>
             <Box sx={{width: "100%",display: "flex",justifyContent: "center",padding: "50px 0 0 0"}}>
                 <Box component="img" src='/src/assets/separatorBlack 1.png' sx={{}}/>
