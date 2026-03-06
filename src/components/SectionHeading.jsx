@@ -7,7 +7,7 @@ export default function SectionHeading(props){
                 width: "100%",
                 display: "flex",
                 justifyContent: "center",
-                bgcolor: "#FFFFFF",
+                bgcolor: "transparent",
                 padding: {
                     xs: "50px 0",
                     md: "80px 0",
