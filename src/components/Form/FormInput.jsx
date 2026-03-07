@@ -1,13 +1,43 @@
 import { TextField } from "@mui/material";
 
-export default function FormInput({label,name,register,errors,validation,rows,...rest}){
-    console.log(rest)
+export default function FormInput({id,name,register,errors,validation,multiline = false,rows = 1,...rest}){
+
 
     return(
-        <TextField rows={rows} label={label} {...register(name,validation)} error={!!errors[name]} helperText={errors[name]?.message} color="secondary" size="small" {...rest} focused sx={{
+        <TextField 
+        id = {id}
+        multiline={multiline}
+        rows={rows} 
+        {...register(name,validation)} 
+        error={!!errors[name]} 
+        helperText={errors[name]?.message} 
+        color="secondary" 
+        size="small" 
+        {...rest} 
+        sx={{
+            fontFamily: "monospace",
             width: {
                 md: "500px",
                 sm: "250px"
+            },
+            "& .MuiOutlinedInput-root": {
+                borderRadius: "20px",
+                "& fieldset": {
+                    borderWidth: "2px",
+                borderColor: "#AFB3FF"
+                },
+                "&:hover fieldset": {
+                borderColor: "#656ED3"
+                },
+                "&.Mui-focused fieldset": {
+                borderColor: "green"
+            }}
+        }}
+        InputProps={{
+            sx: {
+                fontFamily: "monospace",
+                fontSize: "14px",
+                color: "gray"
             }
         }}/>
     )

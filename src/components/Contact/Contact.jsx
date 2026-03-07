@@ -1,19 +1,41 @@
 import SectionHeading from "../SectionHeading";
 import ContactForm from "../../Forms/ContactForm";
-import { Box } from "@mui/material";
-import { useForm } from 'react-hook-form'
+import { Box,Typography } from "@mui/material";
+import {h3style} from "../Other"
 
 export default function Contact(){
 
     return(
         <Box sx={{
-            backgroundImage: "url('contact.png')",
+            height: "100vh",
+            backgroundImage: "url('contact1.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            padding: {
+                sm: "50px",md: "70px"
+            }
         }}>
-            <SectionHeading categories="CONTACT ME" />
+            {/* <SectionHeading categories="CONTACT ME" /> */}
             
-            <ContactForm />
+            <Box sx={{
+                display: "flex",
+                flexDirection: {
+                    md: "row",
+                    xs: "column"
+                },
+                justifyContent: "space-between",
+                "& > .MuiBox-root": {
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%"
+            }}}>
+                <Box>
+                    <Typography sx={h3style}>Lets Get In Touch</Typography>
+                </Box>
+                <Box>
+                    <ContactForm />
+                </Box>
+            </Box>
         </Box>
     )
 }
