@@ -6,7 +6,7 @@ export default function AboutContent({aboutid}){
 
     return(<>
             {matchedContent ? (
-                <Box className="w-80" key={matchedContent.id}>
+                <Box className="w-100" key={matchedContent.id}>
                     <Box className="flex items-center">
                         <Box component="img" src={matchedContent.imageLink} sx={aboutimagestyle} />
                         <Typography sx={h3style}>{matchedContent.name}</Typography>

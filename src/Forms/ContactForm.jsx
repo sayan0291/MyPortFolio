@@ -25,7 +25,6 @@ export default function ContactForm(){
                     gap: 1,
                     "& .MuiFormLabel-root": {
                         fontFamily: "Montserrat",
-                        color: ""
                     }
                 },
                 boxShadow: "0 0 10px 0 rgba(45, 45, 45, 0.4)",
@@ -90,7 +89,7 @@ export default function ContactForm(){
                         register = {register}
                         errors={errors}
                         multiline
-                        rows={5}
+                        rows={7}
                     />
                 </FormControl>
                 

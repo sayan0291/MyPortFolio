@@ -17,8 +17,10 @@ export default function FormInput({id,name,register,errors,validation,multiline 
         sx={{
             fontFamily: "monospace",
             width: {
-                md: "500px",
-                sm: "250px"
+                lg: "450px",
+                md: "400px",
+                sm: "350px",
+                xs: "300px"
             },
             "& .MuiOutlinedInput-root": {
                 borderRadius: "20px",

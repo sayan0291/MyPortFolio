@@ -29,6 +29,8 @@ export const tillNowArray = [
         {id:"3",imageurl: "/SkillsImages/JavaScript.svg", Name:"JAVASCRIPT"},
         {id:"4",imageurl: "/SkillsImages/React.svg", Name:"REACT"},
         {id:"5",imageurl: "/SkillsImages/git.svg", Name:"GIT"},
+        {id:"6",imageurl: "/SkillsImages/tailwind-css.svg", Name:"TAILWIND CSS"},
+        {id:"6",imageurl: "/SkillsImages/material-ui.svg", Name:"MATERIAL UI"},
     ]
 export const learningSkillsArray = [
         {id:"1",imageurl: "/SkillsImages/React.svg", Name:"REACT"},
@@ -65,7 +67,7 @@ export const aboutpstyle = {
     }
 
 export const aboutContent = [
-    {id:1,name: "DESIGN",imageLink: "/src/assets/design.png",paragraph: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job."},
-    {id:2,name: "DEVELOPEMENT",imageLink: "/src/assets/developement.png",paragraph: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job."},
-    {id:3,name: "MAINTAINANCE",imageLink: "/src/assets/maintainance.png",paragraph: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job."}
+    {id:1,name: "DESIGN",imageLink: "/src/assets/design.png",paragraph: "I focus on creating clean, modern, and user-friendly interfaces that provide a great user experience. By combining good design principles with responsive layouts, I ensure that every website looks professional and works smoothly across all devices."},
+    {id:2,name: "DEVELOPMENT",imageLink: "/src/assets/developement.png",paragraph: "As a React Frontend Developer, I build dynamic and responsive web applications using modern technologies like React, JavaScript, HTML, and CSS. I focus on writing clean, efficient code and developing fast, scalable interfaces that deliver a smooth user experience."},
+    {id:3,name: "MAINTENANCE",imageLink: "/src/assets/maintainance.png",paragraph: "I help keep websites running smoothly by fixing bugs, updating features, and improving performance. Regular maintenance ensures that the application stays secure, optimized, and compatible with the latest technologies and browsers."}
 ]

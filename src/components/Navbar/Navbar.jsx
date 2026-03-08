@@ -1,8 +1,14 @@
 import {useState} from "react";
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import {Link} from "react-scroll"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close'
+const sectionArray = [
+  {id:1,toPath: "about",name: "About"},
+  {id:2,toPath: "skills",name: "Skills"},
+  {id:3,toPath: "projects",name: "Projects"},
+  {id:4,toPath: "contact",name: "Contact"}
+]
 
 export default function Navbar() {
 
@@ -10,7 +16,10 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="static" sx={{backgroundColor: "transparent",boxShadow: "none"}} >
+      <AppBar position="fixed" sx={{
+                                    background: "linear-gradient(105deg,#EBEFFF 56%,#AFB3FF 40%,#AFB3FF 60%)",
+                                    boxShadow: "none"
+                                    }} >
         <Toolbar >
           <Typography variant="h6" sx={{ flexGrow: 1,color: "black" }}>
             PORTFOLIO
@@ -30,9 +39,20 @@ export default function Navbar() {
                       fontFamily:"Montserrat",
                   }
               }}>
-              <Button component={NavLink}>About Me</Button>
-              <Button component={NavLink}>Skills</Button>
-              <Button component={NavLink}>Contact Me</Button>
+              {sectionArray.map((obj,index) =>
+                  (
+                    <Link
+                      id={obj.id}
+                      to={obj.toPath}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      activeClass="active"
+                    >
+                        <Button color="inherit">{obj.name}</Button>
+                    </Link>
+                  )
+              )}
           </Box>
           <IconButton onClick={ () => setOpen(true)} sx={{
             display: {
@@ -80,13 +100,13 @@ export default function Navbar() {
               fontSize: "20px"
             }
           }}>
-              <Button component={NavLink} onClick={() => setOpen(false)}>
+              <Button  onClick={() => setOpen(false)}>
                 About Me
               </Button>
-              <Button component={NavLink} onClick={() => setOpen(false)}>
+              <Button  onClick={() => setOpen(false)}>
                 Skills
               </Button>
-              <Button component={NavLink} onClick={() => setOpen(false)}>
+              <Button  onClick={() => setOpen(false)}>
                 Contact Me
               </Button>
           </Box>

@@ -8,11 +8,11 @@ export default function First(){
     return(
         <Box component="div" sx={{
             background: {
-                md: "linear-gradient(105deg, #EBEFFF 50%, #AFB3FF 50%)",
-                xs: "linear-gradient(190deg, #EBEFFF 60%, #AFB3FF 40%)"
-            }
+                md: "linear-gradient(105deg, #EBEFFF 50.17%, #AFB3FF 50%)",
+                xs: "white"
+            },
+            paddingTop: "64px",
         }}>
-            <Navbar />
             <Box sx={{
                 display: "flex",
                 flexDirection: {

@@ -6,7 +6,7 @@ import AboutContent from './AboutContent'
 export default function About(){
 
     return(
-        <Box sx={{bgcolor: "#EBEFFF"}}>
+        <Box id="about" sx={{bgcolor: "#EBEFFF"}}>
             <SectionHeading categories="ABOUT ME"/>
             <Box sx={{
                 width: "100%",
