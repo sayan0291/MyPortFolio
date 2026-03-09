@@ -17,7 +17,7 @@ export default function About(){
                     xs: "15px",
                     sm: "17px",
                     md: "20px"
-                }
+                },
             }}>
                 <Box sx={{
                     display: "flex",

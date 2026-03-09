@@ -8,7 +8,13 @@ import { tillNowArray,learningSkillsArray,otherSkillsArray } from "../Other";
 export default function Skills(){    
 
     return(
-        <Box id="skills" sx={{display: "flex",flexDirection: "column",alignItems: "center",bgcolor: "#EBEFFF", "& > .MuiBox-root": {width: "50%"}}}>
+        <Box id="skills" sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            bgcolor: "#EBEFFF",
+            "& > .MuiBox-root": {width: "50%"}
+            }}>
             <SectionHeading categories="SKILLS" />
             <SkillsSection title="USING SKILLS:" Skills={tillNowArray}/>
             <SkillsSection title="LEARNING:" Skills={learningSkillsArray}/>

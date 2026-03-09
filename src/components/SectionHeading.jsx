@@ -9,7 +9,7 @@ export default function SectionHeading(props){
                 justifyContent: "center",
                 bgcolor: "transparent",
                 padding: {
-                    xs: "50px 0",
+                    xs: "70px 0",
                     md: "80px 0",
                 }
             }}>

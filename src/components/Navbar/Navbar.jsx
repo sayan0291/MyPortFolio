@@ -100,15 +100,19 @@ export default function Navbar() {
               fontSize: "20px"
             }
           }}>
-              <Button  onClick={() => setOpen(false)}>
-                About Me
-              </Button>
-              <Button  onClick={() => setOpen(false)}>
-                Skills
-              </Button>
-              <Button  onClick={() => setOpen(false)}>
-                Contact Me
-              </Button>
+              {sectionArray.map((obj,index) => 
+                (<Link 
+                  key={obj.id}
+                  to={obj.toPath}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  activeClass="active"
+                  
+                  >
+                  <Button onClick={() => setOpen(false)}>{obj.name}</Button>
+                </Link>)
+              )}
           </Box>
 
       </Drawer>
