@@ -42,7 +42,7 @@ export default function Navbar() {
               {sectionArray.map((obj,index) =>
                   (
                     <Link
-                      id={obj.id}
+                      key={obj.id}
                       to={obj.toPath}
                       smooth={true}
                       duration={500}

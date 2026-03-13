@@ -1,10 +1,24 @@
-/* body {
-  height: 100vh;
-  background: linear-gradient(
-    75deg,
-    #e5e5e5 50%,
-    black 50%
-  );
-} */
+
 
 @import "tailwindcss";
+
+.swiper{
+  width: 80%;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #861b1b;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1976d2;
+  transform: scale(1.3);
+}

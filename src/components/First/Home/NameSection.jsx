@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import IconLink from "../../IconLink/IconLink"
 
 export default function NameSection(){
 
@@ -74,11 +75,9 @@ export default function NameSection(){
             <Box sx={{
                 display: "flex",
                 gap: {
-                        lg: "20px",
-                        md: "8px",
-                        xs: "10px"
+                        md: "6px",
+                        xs: "6px"
                     },
-                paddingTop: "10px",
                 "& .MuiSvgIcon-root":{
                     backgroundColor: "#C4C4C4",
                     fontSize: {
@@ -88,8 +87,12 @@ export default function NameSection(){
                     borderRadius: "5px"
                 }
             }}>
-                <GitHubIcon sx={{color: "black"}} />
-                <LinkedInIcon sx={{color: "#0077B5"}}/>
+                <IconLink href="https://github.com/sayan0291" label="Open GitHub Profile">
+                    <GitHubIcon sx={{color: "black"}} />
+                </IconLink>
+                <IconLink href="https://www.linkedin.com/in/sayan-ghanta-b4376035a/" label="Open Linkdin Profile" >
+                    <LinkedInIcon sx={{color: "#0077B5"}}/>
+                </IconLink>
             </Box>
         </Box>
     )

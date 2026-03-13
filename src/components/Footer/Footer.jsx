@@ -13,7 +13,11 @@ export default function Footer(){
                 display: "flex",
                 gap: 1,
                 "& .MuiBox-root": {
-                width: "40px"
+                width: {
+                    xs: "25px",
+                    sm: "30px",
+                    md: "35px"
+                }
             }
             }}>
                 <Box component="img" src="facebook.svg" />

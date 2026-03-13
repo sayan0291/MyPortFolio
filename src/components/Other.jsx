@@ -71,3 +71,12 @@ export const aboutContent = [
     {id:2,name: "DEVELOPMENT",imageLink: "/src/assets/developement.png",paragraph: "As a React Frontend Developer, I build dynamic and responsive web applications using modern technologies like React, JavaScript, HTML, and CSS. I focus on writing clean, efficient code and developing fast, scalable interfaces that deliver a smooth user experience."},
     {id:3,name: "MAINTENANCE",imageLink: "/src/assets/maintainance.png",paragraph: "I help keep websites running smoothly by fixing bugs, updating features, and improving performance. Regular maintenance ensures that the application stays secure, optimized, and compatible with the latest technologies and browsers."}
 ]
+
+// Porjects section
+
+export const ProjectsDetails = [
+    {id:1,value:"01",ProjectName:"Maggi Page",imageLink:"",gitLink:"https://github.com/sayan0291/maggi",publicURL:""},
+    {id:2,value:"02",ProjectName:"Online Code Editor",imageLink:"",gitLink:"https://github.com/sayan0291/minor_project_online_code_editor",publicURL:""},
+    {id:3,value:"03",ProjectName:"College Project",imageLink:"",gitLink:"https://github.com/sayan0291/college_project",publicURL:""},
+    {id:4,value:"04",ProjectName:"My Portfolio",imageLink:"",gitLink:"https://github.com/sayan0291/MyPortFolio",publicURL:""}
+]
