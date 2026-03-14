@@ -3,7 +3,8 @@
 @import "tailwindcss";
 
 .swiper{
-  width: 80%;
+  width: 87%;
+  padding: 40px 30px;
 }
 
 .swiper-slide{

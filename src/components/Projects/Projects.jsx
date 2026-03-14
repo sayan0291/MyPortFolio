@@ -47,7 +47,11 @@ export default function Projects() {
               num={obj.value}
               name={obj.ProjectName}
               gitLink={obj.gitLink}
-            />
+              skillNames={obj.skillNames}
+            >
+              {console.log("first",typeof obj.skillNames)}
+              {obj.childrenIcon}
+            </ProjectCard>
           </SwiperSlide>
         ))}
 
