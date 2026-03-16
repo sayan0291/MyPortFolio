@@ -5,9 +5,14 @@ export default function Footer(){
     return(
         <Box sx={{
             display: "flex",
+            flexDirection: {
+                xs: "column",
+                sm: "row"
+            },
             justifyContent: "space-between",
+            alignItems: "center",
             bgcolor: "#AFB3FF",
-            padding: "50px 30px",
+            padding: "20px",
         }}>
             <Box sx={{
                 display: "flex",
@@ -25,7 +30,17 @@ export default function Footer(){
                 <Box component="img" src="whatsapp.svg" />
             </Box>
             <Typography sx={{
-
+                fontFamily: "Monteserrat",
+                fontWeight: "600",
+                lineHeight: "40px",
+                letterSpacing: "2px",
+                fontSize: {
+                    xs: "10px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "17px"
+                },
+                color: "#1f0067"
             }}>@2026 Sayan Ghanta All Rights Reserved.</Typography>
         </Box>
     )

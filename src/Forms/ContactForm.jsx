@@ -25,6 +25,15 @@ export default function ContactForm(){
                     gap: 1,
                     "& .MuiFormLabel-root": {
                         fontFamily: "Montserrat",
+                        fontSize: {
+                            xs: "10px",sm: "13px",md: "15px"
+                        }
+                    },
+                    "& .MuiFormInput-root": {
+                        fontFamily: "Montserrat",
+                        fontSize: {
+                            xs: "10px",sm: "13px",md: "15px"
+                        }
                     }
                 },
                 boxShadow: "0 0 10px 0 rgba(45, 45, 45, 0.4)",
@@ -32,8 +41,7 @@ export default function ContactForm(){
                 bgcolor: "#EBEFFF",
                 borderRadius: "5px"
             }}>
-                <FormControl sx={{
-                }}>
+                <FormControl>
                     <FormLabel htmlFor="full-name">Full Name:</FormLabel>
                     <FormInput
                         id = "full-name"

@@ -16,10 +16,10 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="fixed" sx={{
-                                    background: "linear-gradient(105deg,#EBEFFF 56%,#AFB3FF 40%,#AFB3FF 60%)",
-                                    boxShadow: "none"
-                                    }} >
+      <AppBar sx={{
+                    background: "linear-gradient(105deg,#EBEFFF 56%,#AFB3FF 40%,#AFB3FF 60%)",
+                    boxShadow: "none"
+                    }} >
         <Toolbar >
           <Typography variant="h6" sx={{ flexGrow: 1,color: "black" }}>
             PORTFOLIO
@@ -97,7 +97,10 @@ export default function Navbar() {
             gap: 4,
             "& .MuiButton-root": {
               color: "white",
-              fontSize: "20px"
+              fontSize: {
+                xs: "15px",
+                sm: "17px"
+              }
             }
           }}>
               {sectionArray.map((obj,index) => 

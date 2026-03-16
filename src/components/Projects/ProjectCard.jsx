@@ -51,7 +51,7 @@ export default function ProjectCard({ num, name, skillNames, gitLink, children }
         <Typography>{name}</Typography>
       </Box>
 
-      <Box>
+      <Box >
         <SkillName skillNames={skillNames} />
       </Box>
 

@@ -10,7 +10,7 @@ export default function SectionHeading(props){
                 bgcolor: "transparent",
                 padding: {
                     xs: "70px 0",
-                    md: "80px 0",
+                    md: "80px 0 40px",
                 }
             }}>
                 <Typography sx={{fontFamily: "Montserrat",border: "4px solid #234E70",color: "#333A2F",padding: "10px 25px",fontWeight: "bold",fontSize: {xs: "18px",sm: "20px",md:"22px",lg: "24px"}}}>{props.categories}</Typography>
