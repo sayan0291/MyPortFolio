@@ -39,7 +39,7 @@ export default function NameSection(){
                 fontWeight: "Bold",
                 color: {
                     xs: "#E4F1FF",
-                    md: "#87BBD7"
+                    md: "#ABABAB"
                 },
                 fontSize: {
                     lg: "35px",
@@ -64,7 +64,7 @@ export default function NameSection(){
                     }}>SAYAN GHANTA</Typography>
                 <Typography variant="p" sx={{
                     fontWeight: "ExtraBold",
-                    color: "#909090",
+                    color: "#87BBD7",
                     fontSize: {
                         xs: "15px",
                         md: "17px"
