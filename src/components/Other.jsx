@@ -67,9 +67,9 @@ export const aboutpstyle = {
     }
 
 export const aboutContent = [
-    {id:1,name: "DESIGN",imageLink: "/src/assets/design.png",paragraph: "I focus on creating clean, modern, and user-friendly interfaces that provide a great user experience. By combining good design principles with responsive layouts, I ensure that every website looks professional and works smoothly across all devices."},
-    {id:2,name: "DEVELOPMENT",imageLink: "/src/assets/developement.png",paragraph: "As a React Frontend Developer, I build dynamic and responsive web applications using modern technologies like React, JavaScript, HTML, and CSS. I focus on writing clean, efficient code and developing fast, scalable interfaces that deliver a smooth user experience."},
-    {id:3,name: "MAINTENANCE",imageLink: "/src/assets/maintainance.png",paragraph: "I help keep websites running smoothly by fixing bugs, updating features, and improving performance. Regular maintenance ensures that the application stays secure, optimized, and compatible with the latest technologies and browsers."}
+    {id:1,name: "DESIGN",imageLink: "design.png",paragraph: "I focus on creating clean, modern, and user-friendly interfaces that provide a great user experience. By combining good design principles with responsive layouts, I ensure that every website looks professional and works smoothly across all devices."},
+    {id:2,name: "DEVELOPMENT",imageLink: "developement.png",paragraph: "As a React Frontend Developer, I build dynamic and responsive web applications using modern technologies like React, JavaScript, HTML, and CSS. I focus on writing clean, efficient code and developing fast, scalable interfaces that deliver a smooth user experience."},
+    {id:3,name: "MAINTENANCE",imageLink: "maintainance.png",paragraph: "I help keep websites running smoothly by fixing bugs, updating features, and improving performance. Regular maintenance ensures that the application stays secure, optimized, and compatible with the latest technologies and browsers."}
 ]
 
 // Porjects section

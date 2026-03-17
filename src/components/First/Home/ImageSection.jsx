@@ -11,7 +11,7 @@ export default function ImageSection(){
                 sm : "0px"
             }
         }}>
-            <Box component="img" src="/src/assets/myimage.png" sx={{
+            <Box component="img" src="myimage.png" sx={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
