@@ -13,7 +13,7 @@ export default function Skills(){
             flexDirection: "column",
             alignItems: "center",
             bgcolor: "#EBEFFF",
-            "& > .MuiBox-root": {width: "50%"}
+            "& > .MuiBox-root": {width: "45%"}
             }}>
             <SectionHeading categories="SKILLS" />
             <SkillsSection title="USING SKILLS:" Skills={tillNowArray}/>

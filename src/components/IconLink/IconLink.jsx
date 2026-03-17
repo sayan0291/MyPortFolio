@@ -7,11 +7,7 @@ export default function IconLink({ href, label, children }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={label}
-      sx={{
-        
-      }}
-    >
+      aria-label={label}>
       {children}
     </IconButton>
   );

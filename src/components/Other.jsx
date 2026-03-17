@@ -1,5 +1,5 @@
 export const imagestyle = {
-        width: {xs: "50px",sm: "60px",md: "80px"}
+        width: {xs: "40px",sm: "50px",md: "60px"}
     }
 
 export const pstyle = {
