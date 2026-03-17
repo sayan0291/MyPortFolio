@@ -37,7 +37,6 @@ export default function About(){
                 <AboutContent aboutid={3}/>
             </Box>
             <Box sx={{width: "100%",display: "flex",justifyContent: "center",padding: "50px 0 0 0"}}>
-                <Box component="img" src='separatorBlack 1.png' sx={{}}/>
             </Box>
         </Box>
     )
