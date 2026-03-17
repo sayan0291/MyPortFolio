@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: VITE_BASE_PATH || "/MyPortFolio"
 })

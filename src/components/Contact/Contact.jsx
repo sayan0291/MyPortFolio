@@ -10,7 +10,7 @@ export default function Contact(){
             backgroundSize: "cover",
             backgroundPosition: "center",
             padding: {
-                xs: "60px",md: "90px"
+                xs: "60px",md: "70px 0 10px"
             }
         }}>
             

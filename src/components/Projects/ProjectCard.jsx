@@ -9,7 +9,7 @@ export default function ProjectCard({ num, name, skillNames, gitLink, children }
 
   return (
     <Box
-      className="bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] px-9 py-4 space-y-3 relative overflow-hidden"
+      className="bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 space-y-3 relative overflow-hidden"
       sx={{
         "& .MuiBox-root": {
           padding: "5px 0"

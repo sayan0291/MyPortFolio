@@ -8,7 +8,7 @@ export const pstyle = {
             xs: "10px",sm: "12px",md: "14px"
         },
         fontWeight: "500",
-        color: "#11351E"
+        color: "#665f00"
     }
 
 export const h5style  = {

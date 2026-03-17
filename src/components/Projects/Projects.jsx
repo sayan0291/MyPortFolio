@@ -18,7 +18,7 @@ export default function Projects() {
 
       <Swiper
         modules={[Navigation, Pagination, Mousewheel]}
-        spaceBetween={40}
+        spaceBetween={20}
         mousewheel={true}
         pagination={{ 
           clickable: true,

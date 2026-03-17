@@ -12,7 +12,7 @@ export default function Footer(){
             justifyContent: "space-between",
             alignItems: "center",
             bgcolor: "#AFB3FF",
-            padding: "20px",
+            padding: "20px"
         }}>
             <Box sx={{
                 display: "flex",
