@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar"
 import { Box } from '@mui/material'
 import NameSection from "./Home/NameSection"
 import ImageSection from "./Home/ImageSection"
@@ -11,6 +10,8 @@ export default function First(){
                 md: "linear-gradient(105deg, #EBEFFF 50%, #68758d 50%)",
                 xs: "white"
             },
+            position: "relative",
+            overflow: "hidden",
             paddingTop: "64px"
         }}>
             <Box sx={{

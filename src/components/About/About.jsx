@@ -1,5 +1,5 @@
 import {Box,Typography} from '@mui/material'
-import SectionHeading from '../SectionHeading'
+import SectionHeading from "../OtherDesign/SectionHeading"
 import AboutContent from './AboutContent'
 
 export default function About(){

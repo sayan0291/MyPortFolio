@@ -1,5 +1,5 @@
 import { Box,Grid,Typography } from "@mui/material";
-import { h5style,imagestyle,pstyle } from "../Other";
+import { h5style,imagestyle,pstyle } from "../OtherDesign/Other";
 
 export default function SkillsSection({title,Skills}){
 

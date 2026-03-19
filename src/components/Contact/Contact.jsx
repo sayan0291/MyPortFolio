@@ -1,6 +1,6 @@
 import ContactForm from "../../Forms/ContactForm";
 import { Box,Typography } from "@mui/material";
-import {h3style,aboutpstyle} from "../Other"
+import {h3style,aboutpstyle} from "../OtherDesign/Other"
 
 export default function Contact(){
 

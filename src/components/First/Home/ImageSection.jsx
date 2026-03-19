@@ -1,24 +1,43 @@
 import { Box, Typography } from "@mui/material";
+import OtherDesign from "../../OtherDesign/Otherdesign";
 
 export default function ImageSection(){
 
     return(
         <Box component="div" sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             height: "91.5vh",
             paddingTop: {
                 md: "50px",
                 sm : "0px"
             }
         }}>
+            <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="55%" hightValue="120px" />
+            <OtherDesign imageId={1} displayValue="block" topValue="90%" leftValue="95%" hightValue="100px" />
+            <OtherDesign imageId={2} displayValue="none" topValue="20.3%" leftValue="54.9%" hightValue="120px" />
+            <OtherDesign imageId={2} displayValue="block" topValue="29%" leftValue="5%" hightValue="70px" />
+            <OtherDesign imageId={2} displayValue="none" topValue="79%" leftValue="35%" hightValue="90px" />
             <Box component="img" src="myimage.png" sx={{
-                width: "100%",
-                height: "93%",
+                width: {
+                    xs: "80%",
+                    md: "100%",
+                },
+                height: {
+                    xs: "100%",
+                    md: "93%"
+                },
                 objectFit: "cover",
                 display: "block"
             }}/>
             <Box
                 sx={{
-                    display: "flex",
+                    position: "relative",
+                    display: {
+                        xs: "none",
+                        md: "flex"
+                    },
                     justifyContent: "center",
                     alignItems: "center",
                     gap:"10px",

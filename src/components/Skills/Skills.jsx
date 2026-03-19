@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../OtherDesign/SectionHeading";
 import SkillsSection from "./SkillsSection";
-import { tillNowArray,learningSkillsArray,otherSkillsArray } from "../Other";
+import { tillNowArray,learningSkillsArray,otherSkillsArray } from "../OtherDesign/Other";
 
 
 

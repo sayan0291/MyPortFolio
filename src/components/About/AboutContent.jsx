@@ -1,5 +1,5 @@
 import {Box,Typography} from "@mui/material"
-import { aboutimagestyle,h3style,aboutpstyle,aboutContent } from "../Other"
+import { aboutimagestyle,h3style,aboutpstyle,aboutContent } from "../OtherDesign/Other"
 
 export default function AboutContent({aboutid}){
     const matchedContent = aboutContent.find(obj => obj.id === aboutid);

@@ -42,18 +42,18 @@ export default function NameSection(){
                     md: "#ABABAB"
                 },
                 fontSize: {
-                    lg: "35px",
-                    md: "30px",
+                    lg: "30px",
+                    md: "25px",
                     sm: "20px",
-                    xs: "20px"
+                    xs: "17px"
                 }
             }}>Hi, I am</Typography>
             <Box>
                 <Typography variant="h2" sx={{
                     fontWeight: "Bold",
                     fontSize:{
-                        lg: "55px",
-                        md: "50px",
+                        lg: "45px",
+                        md: "40px",
                         sm: "33px",
                         xs: "27px"
                     },
@@ -67,7 +67,7 @@ export default function NameSection(){
                     color: "#87BBD7",
                     fontSize: {
                         xs: "15px",
-                        md: "17px"
+                        md: "18px"
                     }
                 }}>
                     Front-end Developer / UI Designer</Typography>

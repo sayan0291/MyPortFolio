@@ -3,9 +3,9 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 import { Box } from "@mui/material";
-import { ProjectsDetails } from "../Other.jsx"
+import { ProjectsDetails } from "../OtherDesign/Other"
 import ProjectCard from "./ProjectCard";
-import SectionHeading from "../SectionHeading"
+import SectionHeading from "../OtherDesign/SectionHeading"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Mousewheel } from "swiper/modules"
