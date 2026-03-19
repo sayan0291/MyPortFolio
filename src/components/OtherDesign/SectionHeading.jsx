@@ -6,14 +6,21 @@ export default function SectionHeading(props){
             <Box sx={{
                 width: "100%",
                 display: "flex",
-                justifyContent: "center",
+                alignItems: "center",
                 bgcolor: "transparent",
+                gap: "5px",
                 padding: {
-                    xs: "70px 0",
-                    md: "80px 0 40px",
+                    xs: "10px 0",
+                    md: "20px 30px",
+                },
+                "& .MuiTypography-root": {
+                    fontFamily: "Fira Code",
+                    fontSize: {xs: "18px",sm: "20px",md:"22px",lg: "24px"}
                 }
-            }}>
-                <Typography sx={{fontFamily: "Montserrat",border: "4px solid #234E70",color: "#333A2F",padding: "10px 25px",fontWeight: "bold",fontSize: {xs: "18px",sm: "20px",md:"22px",lg: "24px"}}}>{props.categories}</Typography>
+            }}> 
+                <Typography sx={{color: "#C778DD"}}>#</Typography>
+                <Typography sx={{color: "#FFFFFF"}}>{props.categories}</Typography>
+                <Box sx={{width: "150px",height: "1.5px",bgcolor: "#C778DD"}} />
             </Box>
     )
 }

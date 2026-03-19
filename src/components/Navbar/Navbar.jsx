@@ -17,14 +17,14 @@ export default function Navbar() {
 
   useEffect(() => {
   const handleScroll = () => {
-    setScrolled(window.scrollY > 630);
+    setScrolled(window.scrollY > 600);
   };
     window.addEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <AppBar position="absolute" sx={{
+      <AppBar position="fixed" sx={{
                     background: scrolled ? "#292929" : "transparent",
                     boxShadow: "none",
                     transform: scrolled ? "translateY(0px)" : "translateY(0px)",
@@ -57,6 +57,7 @@ export default function Navbar() {
                       to={obj.toPath}
                       smooth={true}
                       duration={500}
+                      offset={-63}
                       spy={true}
                       activeClass="active"
                     >

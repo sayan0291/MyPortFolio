@@ -33,11 +33,11 @@ export default function ImageSection(){
             }}/>
             <Box
                 sx={{
-                    position: "relative",
                     display: {
                         xs: "none",
                         md: "flex"
                     },
+                    padding: "3px 10px",
                     justifyContent: "center",
                     alignItems: "center",
                     gap:"10px",
