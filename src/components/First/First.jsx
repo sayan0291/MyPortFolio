@@ -8,10 +8,10 @@ export default function First(){
     return(
         <Box component="div" sx={{
             background: {
-                md: "linear-gradient(105deg, #EBEFFF 50.17%, #AFB3FF 50%)",
+                md: "linear-gradient(105deg, #EBEFFF 50%, #68758d 50%)",
                 xs: "white"
             },
-            paddingTop: "64px",
+            paddingTop: "64px"
         }}>
             <Box sx={{
                 display: "flex",

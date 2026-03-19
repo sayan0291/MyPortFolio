@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer } from "@mui/material";
 import {Link} from "react-scroll"
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,12 +13,23 @@ const sectionArray = [
 export default function Navbar() {
 
   const [open,setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 630);
+  };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <AppBar sx={{
-                    background: "linear-gradient(105deg,#EBEFFF 56%,#AFB3FF 40%,#AFB3FF 60%)",
-                    boxShadow: "none"
+      <AppBar position="absolute" sx={{
+                    background: scrolled ? "#292929" : "transparent",
+                    boxShadow: "none",
+                    transform: scrolled ? "translateY(0px)" : "translateY(0px)",
+                    transition: "transform 0.4s ease,background-color 0.4s ease",
+                    willChange: "transform",
                     }} >
         <Toolbar >
           <Typography variant="h6" sx={{ flexGrow: 1,color: "black" }}>
