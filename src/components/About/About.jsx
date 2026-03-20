@@ -53,7 +53,7 @@ export default function About(){
                     <Typography>Hello, i’m Sayan!</Typography>
                     <Typography>I’m a self-taught front-end developer. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</Typography>
                     <Typography>Transforming my creativity and knowledge into a websites has been my passion . I always strive to learn about the newest technologies and frameworks.</Typography>
-                    <OtherButton buttonName="Read More" />
+                    <OtherButton buttonName="Read More →" itemsAlign="self-start" />
                 </Box>
             </Box>
         </Box>

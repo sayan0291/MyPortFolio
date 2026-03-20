@@ -3,7 +3,7 @@ import NameSection from "./Home/NameSection"
 import ImageSection from "./Home/ImageSection"
 
 export default function First(){
-
+    // 68758d
     return(
         <Box component="div" sx={{
             background: {

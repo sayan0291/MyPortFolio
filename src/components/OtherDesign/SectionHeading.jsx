@@ -4,7 +4,7 @@ export default function SectionHeading(props){
 
     return(
             <Box sx={{
-                width: "100%",
+                width: "auto",
                 display: "flex",
                 alignItems: "center",
                 bgcolor: "transparent",

@@ -2,7 +2,7 @@ import {ListItem,ListItemText} from "@mui/material"
 import { color } from "motion"
 import { NavLink } from "react-router-dom"
 
-export default function OtherButton({buttonName,href}){
+export default function OtherButton({buttonName,itemsAlign,href}){
     return(
         <ListItem button
             component={NavLink}
@@ -11,7 +11,7 @@ export default function OtherButton({buttonName,href}){
             rel="noopener noreferrer"
             sx={{
                 cursor: "pointer",
-                alignSelf: "self-start",
+                alignSelf: itemsAlign,
                 border: "1px solid #BECBD6",
                 borderRadius: "2px",
                 width: "auto",
@@ -25,10 +25,10 @@ export default function OtherButton({buttonName,href}){
                     color: "#FFFFFF",
                     fontFamily: "Fira Code",
                     fontSize: {
-                        xs: "12px",
-                        sm: "14px",
-                        md: "16px",
-                        lg: "18px"
+                        xs: "11px",
+                        sm: "13px",
+                        md: "15px",
+                        lg: "17px"
                     }
                 }
                 }}

@@ -77,10 +77,14 @@ import { PiCodeDuotone } from "react-icons/pi";
 import { PiBuildingApartmentFill } from "react-icons/pi";
 import { GiNoodles } from "react-icons/gi";
 import { BsPersonBoundingBox } from "react-icons/bs";
+import maggiImage from "/Project/maggi-logo.svg"
+import codeImage from "/Project/code-editor.png"
+import collegeImage from "/Project/CollegeProject.svg"
+import portfolioImage from "/Project/CollegeProject.svg"
 
 export const ProjectsDetails = [
-    {id:1,value:"01",ProjectName:"Maggi Page",imageLink:"",gitLink:"https://github.com/sayan0291/maggi",publicURL:"",childrenIcon: <GiNoodles color="#FFAA33 " />,skillNames: ["html","css","js"]},
-    {id:2,value:"02",ProjectName:"Online Code Editor",imageLink:"",gitLink:"https://github.com/sayan0291/minor_project_online_code_editor",publicURL:"",childrenIcon: <PiCodeDuotone color="#191970" />,skillNames: ["html","css","js"]},
-    {id:3,value:"03",ProjectName:"College Project",imageLink:"",gitLink:"https://github.com/sayan0291/college_project",publicURL:"",childrenIcon: <PiBuildingApartmentFill color="#708090" />,skillNames: ["html","css","js"]},
-    {id:4,value:"04",ProjectName:"My Portfolio",imageLink:"",gitLink:"https://github.com/sayan0291/MyPortFolio",publicURL:"",childrenIcon: <BsPersonBoundingBox color="#191970" />,skillNames: ["html","css","js"]}                          
+    {id:1,value:"01",ProjectName:"Maggi Page",imageLink: maggiImage,gitLink:"https://github.com/sayan0291/maggi",publicURL:"",childrenIcon: <GiNoodles color="#FFAA33 " />,skillNames: ["html","css","js"]},
+    {id:2,value:"02",ProjectName:"College Project",imageLink: collegeImage,gitLink:"https://github.com/sayan0291/college_project",publicURL:"",childrenIcon: <PiBuildingApartmentFill color="#708090" />,skillNames: ["react","express.js","node.js","mongodb"]},
+    {id:3,value:"03",ProjectName:"Online Code Editor",imageLink: codeImage,gitLink:"https://github.com/sayan0291/minor_project_online_code_editor",publicURL:"",childrenIcon: <PiCodeDuotone color="#191970" />,skillNames: ["html","css","js"]},
+    {id:4,value:"04",ProjectName:"My Portfolio",imageLink: portfolioImage,gitLink:"https://github.com/sayan0291/MyPortFolio",publicURL:"",childrenIcon: <BsPersonBoundingBox color="#191970" />,skillNames: ["html","css","js"]}                          
 ]

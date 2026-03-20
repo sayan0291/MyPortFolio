@@ -7,7 +7,7 @@ export default function SkillName({skillNames}){
             sx={{
                 display: "grid",
                 gridTemplateColumns: {
-                    xs: "repeat(3,1fr)"
+                    xs: "repeat(2,1fr)"
                 },
                 gap: "10px",
                 "& .MuiTypography-root": {

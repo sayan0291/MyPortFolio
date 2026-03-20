@@ -6,9 +6,7 @@ export default function Contact(){
 
     return(
         <Box id="contact" sx={{
-            backgroundImage: "url('contact1.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundColor: "#282C33",
             padding: {
                 xs: "60px",md: "70px 0 10px"
             }
