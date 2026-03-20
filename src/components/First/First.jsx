@@ -7,8 +7,8 @@ export default function First(){
     return(
         <Box component="div" sx={{
             background: {
-                md: "linear-gradient(105deg, #EBEFFF 50%, #68758d 50%)",
-                xs: "white"
+                md: "linear-gradient(105deg, #EBEFFF 50%, #282C33 50%)",
+                xs: "#282C33"
             },
             position: "relative",
             overflow: "hidden",

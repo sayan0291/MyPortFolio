@@ -1,26 +1,38 @@
-import {Box,Typography} from "@mui/material"
+import {ListItem,ListItemText} from "@mui/material"
+import { color } from "motion"
+import { NavLink } from "react-router-dom"
 
 export default function OtherButton({buttonName,href}){
     return(
-        <Box 
-            component="a"
-            href={href}
+        <ListItem button
+            component={NavLink}
+            to={href}
             target="_blank"
             rel="noopener noreferrer"
             sx={{
                 cursor: "pointer",
                 alignSelf: "self-start",
-                padding: "3px 15px",
                 border: "1px solid #BECBD6",
-                borderRadius: "2px"
+                borderRadius: "2px",
+                width: "auto",
+                padding: "0px 10px"
             }}
         >
-            <Typography 
+            <ListItemText
+                primary={buttonName}
                 sx={{
-                    color: "#c0ffed",
-                    fontFamily: "Fira Code"
+                    "& .MuiTypography-root":{
+                    color: "#FFFFFF",
+                    fontFamily: "Fira Code",
+                    fontSize: {
+                        xs: "12px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "18px"
+                    }
+                }
                 }}
-            >{buttonName}</Typography>
-        </Box>
+            />
+        </ListItem>
     )
 }

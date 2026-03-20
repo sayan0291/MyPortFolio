@@ -55,7 +55,7 @@ export default function NameSection(){
                         lg: "45px",
                         md: "40px",
                         sm: "33px",
-                        xs: "27px"
+                        xs: "25px"
                     },
                     color: {
                         xs: "#8BD8BD",

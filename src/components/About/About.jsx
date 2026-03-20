@@ -1,13 +1,13 @@
 import {Box,Typography} from '@mui/material'
 import SectionHeading from "../OtherDesign/SectionHeading"
-import AboutContent from './AboutContent'
+import AboutCard from './AboutCard'
 import OtherDesign from "../OtherDesign/Otherdesign"
 import OtherButton from '../OtherDesign/OtherButton'
 
 export default function About(){
 
     return(
-        <Box id="about" sx={{bgcolor: "#68758d",height: "auto",position: "relative",overflow:"hidden"}}>
+        <Box id="about" sx={{bgcolor: "#282C33",height: "auto",position: "relative",overflow:"hidden"}}>
             <SectionHeading categories="about-me"/>
             <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="7%" hightValue="200px" />
             <Box sx={{
@@ -17,8 +17,10 @@ export default function About(){
                     xs: "column",
                     md: "row"
                 },
-                justifyContent: "space-between",
-                alignItems: "center",
+                gap: {
+                    xs: "10px",
+                    md: "0",
+                },
                 padding: "20px 30px",
                 "& > .MuiBox-root":{
                     width: {
@@ -28,7 +30,7 @@ export default function About(){
                 }
             }}>
                 <Box sx={{display: {xs: "flex"},justifyContent: "center",alignItems: "center"}} >
-                    <AboutContent/>
+                    <AboutCard/>
                 </Box>
                 <Box sx={{
                     display: "flex",

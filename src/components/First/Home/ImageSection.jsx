@@ -25,7 +25,7 @@ export default function ImageSection(){
                     md: "100%",
                 },
                 height: {
-                    xs: "100%",
+                    xs: "80%",
                     md: "93%"
                 },
                 objectFit: "cover",

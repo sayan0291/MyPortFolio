@@ -12,7 +12,7 @@ import { Navigation, Pagination, Mousewheel } from "swiper/modules"
 
 export default function Projects() {
   return (
-    <Box id="projects" sx={{ bgcolor: "#EBEFFF"}}>
+    <Box id="projects" sx={{ bgcolor: "#282C33"}}>
 
       <SectionHeading categories="Projects" />
 
