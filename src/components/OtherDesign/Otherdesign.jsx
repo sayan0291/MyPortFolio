@@ -2,7 +2,7 @@ import dottedImage from "/someOther/Dots.svg"
 import rectangleImage from "/someOther/Rectangle.svg"
 import {Box} from "@mui/material"
 
-export default function OtherDesign({imageId,displayValue,topValue,leftValue,hightValue}){
+export default function OtherDesign({imageId,displayValue,topValue,leftValue,hightValue,rotationAngle=0}){
 
     const OtherImageArray = [
         {id:1, value:dottedImage, alterText: "Dotted Image"},
@@ -21,6 +21,7 @@ export default function OtherDesign({imageId,displayValue,topValue,leftValue,hig
                 height: hightValue,
                 top: topValue,
                 left: leftValue,
+                transform: `rotate(${rotationAngle}deg)`
             }}
         />
     )

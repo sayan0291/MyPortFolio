@@ -15,7 +15,8 @@ export default function OtherButton({buttonName,itemsAlign,href}){
                 border: "1px solid #BECBD6",
                 borderRadius: "2px",
                 width: "auto",
-                padding: "0px 10px"
+                padding: "0px 10px",
+                marginRight: "10px"
             }}
         >
             <ListItemText

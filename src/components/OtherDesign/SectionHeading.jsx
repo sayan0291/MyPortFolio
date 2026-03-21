@@ -8,6 +8,7 @@ export default function SectionHeading(props){
                 display: "flex",
                 alignItems: "center",
                 bgcolor: "transparent",
+                marginLeft: "10px",
                 gap: "5px",
                 padding: {
                     xs: "10px 0",

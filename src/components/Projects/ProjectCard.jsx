@@ -12,7 +12,7 @@ export default function ProjectCard({projectId}) {
 
   return (
     <Box
-      className="bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 space-y-3 relative overflow-hidden"
+      className="bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 pb-5 space-y-3 relative overflow-hidden"
     >
       <Box component="img" src={item.imageLink} />
 
@@ -29,26 +29,32 @@ export default function ProjectCard({projectId}) {
           "& .MuiTypography-root":{
             fontSize: {
             xs: "15px",
-            sm: "20px"
+            sm: "18px",
+            md: "19px"
           },
-          fontFamily: "Monteserrat"
+          fontFamily: "Monteserrat",
+          color: "#000047"
           }
         }}
       >
-        <IconButton
+        {/* <IconButton
         sx={{
           fontSize: {
-            xs: "55px",
-            sm: "60px"
+            xs: "45px",
+            sm: "50px",
+            "&:hover": {
+              boxShadow: "none",
+              backgroundColor: "transparent"
+            }
           }
         }}
       >
         {item.childrenIcon}
-      </IconButton>
-        <Typography>{item.ProjectName}</Typography>
+      </IconButton> */}
+        <Typography >{item.ProjectName}</Typography>
       </Box>
 
-      <Box >
+      <Box>
         <SkillName skillNames={item.skillNames} />
       </Box>
 

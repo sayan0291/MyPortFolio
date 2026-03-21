@@ -17,6 +17,11 @@ export default function SkillName({skillNames}){
                     borderRadius: "5px",
                     boxShadow: "0 0 3px 1px rgba(0,0,0,0.1)",
                     fontFamily: "monospace",
+                    fontSize: {
+                        xs: "10px",
+                        sm: "12px",
+                        md: "14px"
+                    }
                 }
             }}
         >
