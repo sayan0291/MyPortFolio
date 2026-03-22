@@ -1,54 +1,67 @@
-import ContactForm from "../../Forms/ContactForm";
 import { Box,Typography } from "@mui/material";
-import {h3style,aboutpstyle} from "../OtherDesign/Other"
+import SectionHeading from "../OtherDesign/SectionHeading";
+import { TfiEmail } from "react-icons/tfi";
+import { TbBrandLinkedinFilled } from "react-icons/tb";
+import IconLink from "../IconLink/IconLink";
+import { h5style,h3style,pstyle } from "../OtherDesign/Other";
 
 export default function Contact(){
 
     return(
         <Box id="contact" sx={{
             backgroundColor: "#282C33",
-            padding: {
-                xs: "60px",md: "70px 0 10px"
+            height: {
+                xs: "50vh"
             }
-        }}>
-            
-            <Box sx={{
-                display: "flex",
-                flexDirection: {
-                    md: "row",
-                    xs: "column"
-                },
-                justifyContent: "space-between",
-                gap: {
-                    sm :"20px",
-                    xs: "25px"
-                },
-                "& > .MuiBox-root": {
+        }}> 
+            <SectionHeading categories="contact-me" />
+            <Box
+                sx={{
                     display: "flex",
-                    alignItems: "start",
-                    width: "100%"
-            }}}>
-                <Box sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    "& .MuiTypography-root":{
-                        alignSelf: "center",
-                        width: {
-                            xs: "97%",
-                            sm: "60%",
-                            md: "90%",
-                            lg: "60%"
-                        }
-                    }
+                    justifyContent: "space-between",
+                    padding: "20px 60px"
+                }}
+            >
+                <Box
+                sx={{
+                    width: "30%",
                 }}>
-                    <Typography sx={h3style}>Lets Get In Touch</Typography>
-                    <Typography sx={aboutpstyle}>Have a project in mind or a question to ask? I'd love to hear from you. Feel free to reach out via email, phone, or the contact form below, and I'll get back to you as soon as possible.</Typography>
+                    <Typography sx={h5style}>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</Typography>
                 </Box>
-                <Box sx={{
-                    display: "flex",
-                    justifyContent: "center"
-                }}>
-                    <ContactForm />
+                <Box
+                    sx={{
+                        border: "1px solid #ABB2BF",
+                        padding: "16px"
+                    }}
+                >
+                    <Typography sx={h3style}>Message me here</Typography>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "flex-start",
+                            "& .MuiBox-root":{
+                                display: "flex",
+                                alignItems: "center"
+                            },
+                            "& .MuiTypography-root":{
+                                ...pstyle
+                            }
+                        }}
+                    >
+                        <Box>
+                            <IconLink>
+                                {<TfiEmail/>}
+                            </IconLink>
+                            <Typography>sayanghanta57@gmail.com</Typography>
+                        </Box>
+                        <Box>
+                            <IconLink href="https://www.linkedin.com/in/sayan-ghanta-b4376035a/">
+                                {<TbBrandLinkedinFilled/>}
+                            </IconLink>
+                            <Typography>Sayan Ghanta</Typography>
+                        </Box>
+                    </Box>
                 </Box>
             </Box>
         </Box>

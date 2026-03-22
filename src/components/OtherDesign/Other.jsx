@@ -3,24 +3,23 @@ export const imagestyle = {
     }
 
 export const pstyle = {
-        fontFamily: "Montserrat",
+        fontFamily: "Fira Code",
         fontSize: {
-            xs: "10px",sm: "12px",md: "14px"
+            xs: "12px",sm: "14px",md: "16px"
         },
         fontWeight: "500",
-        color: "#665f00"
+        color: "#fffef1"
     }
 
 export const h5style  = {
-        fontFamily: "Montserrat",
+        fontFamily: "monospace",
         fontSize: {
-            xs: "16px",sm: "18px",md: "20px"
+            xs: "12px",
+            sm: "14px",
+            md: "16px",
+            lg: "18px"
         },
-        fontWeight: "Bold",
-        margin: {
-            xs: "10px 0",sm: "12px 0",md: "14px 0"
-        },
-        color: "#3D155F"
+        color: "#ABB2BF"
 }
 
 export const tillNowArray = [
@@ -48,22 +47,24 @@ export const aboutimagestyle = {
     }
 
 export const h3style = {
-        fontFamily: "Montserrat",
+        fontFamily: "Fira Code",
         fontSize: {
-            xs: "17px",
-            sm: "18px",
-            md: "20px",
-            lg: "22px"
+            xs: "14px",
+            sm: "16px",
+            md: "18px",
+            lg: "20px"
         },
-        color: "#635E87",
-        fontWeight: "bold"
+        color: "#b9b6d0"
     }
 
-export const aboutpstyle = {
+export const IconLinkButton = {
         fontFamily: "Open Sans",
-        fontSize: "14px",
-        fontWeight: "light",
-        color: "#013DC4"
+        color: "#ABB2BF",
+        fontSize: "30px",
+        "&:hover":{
+            boxShadow: "none",
+            backgroundColor: "transparent"
+        }
     }
 
 export const aboutContent = [
@@ -81,6 +82,7 @@ import maggiImage from "/Project/maggi-logo.svg"
 import codeImage from "/Project/code-editor.png"
 import collegeImage from "/Project/CollegeProject.svg"
 import portfolioImage from "/Project/CollegeProject.svg"
+import { color, hover } from "motion"
 
 export const ProjectsDetails = [
     {id:1,value:"01",ProjectName:"Maggi Page",imageLink: maggiImage,gitLink:"https://github.com/sayan0291/maggi",publicURL:"",childrenIcon: <GiNoodles color="#FFAA33 " />,skillNames: ["html","css","js"]},

@@ -3,6 +3,7 @@ import SectionHeading from "../OtherDesign/SectionHeading"
 import AboutCard from './AboutCard'
 import OtherDesign from "../OtherDesign/Otherdesign"
 import OtherButton from '../OtherDesign/OtherButton'
+import { h5style } from '../OtherDesign/Other'
 
 export default function About(){
 
@@ -37,15 +38,8 @@ export default function About(){
                     flexDirection: "column",
                     gap: "10px",
                     alignSelf: "center",
-                    "& > .MuiTypography-root": {
-                        fontFamily: "monospace",
-                        fontSize: {
-                            xs: "12px",
-                            sm: "14px",
-                            md: "16px",
-                            lg: "18px"
-                        },
-                        color: "#ABB2BF"
+                    "& > .MuiTypography-root":{
+                        ...h5style
                     }
                 }}>
             

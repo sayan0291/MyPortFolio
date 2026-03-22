@@ -5,7 +5,7 @@ export default function AboutContent(){
     return(
         <>
             <Box>
-
+                
             </Box>
         </>
     )
