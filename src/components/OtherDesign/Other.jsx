@@ -8,7 +8,7 @@ export const pstyle = {
             xs: "12px",sm: "14px",md: "16px"
         },
         fontWeight: "500",
-        color: "#fffef1"
+        color: "#83878b"
     }
 
 export const h5style  = {
@@ -82,7 +82,6 @@ import maggiImage from "/Project/maggi-logo.svg"
 import codeImage from "/Project/code-editor.png"
 import collegeImage from "/Project/CollegeProject.svg"
 import portfolioImage from "/Project/CollegeProject.svg"
-import { color, hover } from "motion"
 
 export const ProjectsDetails = [
     {id:1,value:"01",ProjectName:"Maggi Page",imageLink: maggiImage,gitLink:"https://github.com/sayan0291/maggi",publicURL:"",childrenIcon: <GiNoodles color="#FFAA33 " />,skillNames: ["html","css","js"]},

@@ -7,7 +7,7 @@ import OtherDesign from "../OtherDesign/Otherdesign"
 export default function Projects() {
 
   return (
-    <Box id="projects" sx={{ bgcolor: "#282C33",position: "relative",overflow: "hidden"}}>
+    <Box id="projects" sx={{ bgcolor: "#282C33",position: "relative",overflow: "hidden",padding: "20px 0"}}>
       <OtherDesign imageId={2} displayValue="none" topValue="71%" leftValue="-48px" hightValue="150px" />
       <OtherDesign imageId={1} displayValue="none" topValue="70%" leftValue="-50px" hightValue="156px" />
       <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="95%" hightValue="90px" rotationAngle="10" />
@@ -26,6 +26,7 @@ export default function Projects() {
         sx={{
           display: "grid",
           justifySelf: "center",
+          padding: "20px 0",
           gap: "30px",
           width: {
             xs: "60%",
