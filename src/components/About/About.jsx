@@ -3,26 +3,16 @@ import SectionHeading from "../OtherDesign/SectionHeading"
 import AboutCard from './AboutCard'
 import OtherDesign from "../OtherDesign/Otherdesign"
 import OtherButton from '../OtherDesign/OtherButton'
-import { h5style } from '../OtherDesign/Other'
+import { h5style,sectionAlign,pageSection } from '../OtherDesign/Other'
 
 export default function About(){
 
     return(
-        <Box id="about" sx={{bgcolor: "#282C33",height: "auto",position: "relative",overflow:"hidden"}}>
+        <Box id="about" sx={{ ...pageSection }}>
             <SectionHeading categories="about-me"/>
-            <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="7%" hightValue="200px" />
+            <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="7%" hightValue="50px" />
             <Box sx={{
-                height: "70%",
-                display: "flex",
-                flexDirection: {
-                    xs: "column",
-                    md: "row"
-                },
-                gap: {
-                    xs: "10px",
-                    md: "0",
-                },
-                padding: "20px 30px",
+                ...sectionAlign,
                 "& > .MuiBox-root":{
                     width: {
                         xs: "100%",
@@ -30,14 +20,14 @@ export default function About(){
                     },
                 }
             }}>
-                <Box sx={{display: {xs: "flex"},justifyContent: "center",alignItems: "center"}} >
+                <Box sx={{display: {xs: "none",sm: "flex"},justifyContent: "center",alignItems: "center"}} >
                     <AboutCard/>
                 </Box>
                 <Box sx={{
                     display: "flex",
                     flexDirection: "column",
-                    gap: "10px",
                     alignSelf: "center",
+                    gap: "10px",
                     "& > .MuiTypography-root":{
                         ...h5style
                     }

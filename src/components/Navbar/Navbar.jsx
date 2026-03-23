@@ -3,9 +3,9 @@ import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer } from "@m
 import {Link} from "react-scroll"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close'
+import { sectionAlign } from "../OtherDesign/Other";
 const sectionArray = [
   {id:1,toPath: "about",name: "About"},
-  {id:2,toPath: "skills",name: "Skills"},
   {id:3,toPath: "projects",name: "Projects"},
   {id:4,toPath: "contact",name: "Contact"}
 ]
@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
   const handleScroll = () => {
-    setScrolled(window.scrollY > 600);
+    setScrolled(window.scrollY > 400);
   };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -78,9 +78,9 @@ export default function Navbar() {
 
         </Toolbar>
       </AppBar>
-      <Drawer anchor="top" open={open} onClose={() => setOpen(false)} PaperProps={{
+      <Drawer anchor="left" open={open} onClose={() => setOpen(false)} PaperProps={{
           sx: {
-            width: "100vw",
+            width: "40vw",
             height: "100vh",
             backgroundColor: "rgba(0,0,0,0.9)",
             backdropFilter: "blur(8px)",
@@ -88,10 +88,8 @@ export default function Navbar() {
           }
         }}>
           <Box sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            p: 3
+            ...sectionAlign,
+            flexDirection: "row"
           }}>
             <Typography variant="h6">PORTFOLIO</Typography>
 
@@ -104,14 +102,13 @@ export default function Navbar() {
             flex: 1,
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
             alignItems: "center",
-            gap: 4,
+            gap: 2,
             "& .MuiButton-root": {
               color: "white",
               fontSize: {
-                xs: "15px",
-                sm: "17px"
+                xs: "13px",
+                sm: "15px"
               }
             }
           }}>
@@ -123,7 +120,7 @@ export default function Navbar() {
                   duration={500}
                   spy={true}
                   activeClass="active"
-                  
+                  offset={-70}
                   >
                   <Button onClick={() => setOpen(false)}>{obj.name}</Button>
                 </Link>)

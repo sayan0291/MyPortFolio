@@ -1,3 +1,25 @@
+export const sectionAlign = {
+    display: "flex",
+    flexDirection: {
+        xs: "column",
+        md: "row"
+    },
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: {
+        xs: "10px",
+        md: "0",
+    },
+    padding: "20px 30px",
+}
+
+export const pageSection = {
+    bgcolor: "#282C33",
+    position: "relative",
+    overflow: "hidden",
+}
+
+
 export const imagestyle = {
         width: {xs: "40px",sm: "50px",md: "60px"}
     }

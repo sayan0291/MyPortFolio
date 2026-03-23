@@ -3,11 +3,12 @@ import ProjectCard from "./ProjectCard";
 import SectionHeading from "../OtherDesign/SectionHeading"
 import OtherButton from "../OtherDesign/OtherButton"
 import OtherDesign from "../OtherDesign/Otherdesign"
+import { pageSection } from "../OtherDesign/Other";
 
 export default function Projects() {
 
   return (
-    <Box id="projects" sx={{ bgcolor: "#282C33",position: "relative",overflow: "hidden",padding: "20px 0"}}>
+    <Box id="projects" sx={{ ...pageSection }}>
       <OtherDesign imageId={2} displayValue="none" topValue="71%" leftValue="-48px" hightValue="150px" />
       <OtherDesign imageId={1} displayValue="none" topValue="70%" leftValue="-50px" hightValue="156px" />
       <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="95%" hightValue="90px" rotationAngle="10" />
@@ -18,7 +19,7 @@ export default function Projects() {
           justifyContent: "space-between",
         }}
       >
-        <SectionHeading categories="Projects" />
+        <SectionHeading categories="projects" />
         <OtherButton buttonName="View All →" itemsAlign="center" />
       </Box>
 
