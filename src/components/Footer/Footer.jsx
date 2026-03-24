@@ -6,7 +6,7 @@ export default function Footer(){
     return(
         <Box sx={{
             ...sectionAlign,
-            background: "#14161a"
+            background: "#1a2023"
         }}>
             <Box sx={{
                 display: "flex",

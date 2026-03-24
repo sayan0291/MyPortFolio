@@ -71,10 +71,10 @@ export const aboutimagestyle = {
 export const h3style = {
         fontFamily: "Fira Code",
         fontSize: {
-            xs: "14px",
-            sm: "16px",
-            md: "18px",
-            lg: "20px"
+            xs: "12px",
+            sm: "14px",
+            md: "16px",
+            lg: "18px"
         },
         color: "#b9b6d0"
     }

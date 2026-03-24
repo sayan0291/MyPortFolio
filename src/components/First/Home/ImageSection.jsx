@@ -16,7 +16,7 @@ export default function ImageSection(){
         }}>
             <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="55%" hightValue="120px" />
             <OtherDesign imageId={1} displayValue="block" topValue="90%" leftValue="95%" hightValue="100px" />
-            <OtherDesign imageId={2} displayValue="none" topValue="20.3%" leftValue="54.9%" hightValue="120px" />
+            <OtherDesign imageId={2} displayValue="none" topValue="20.2%" leftValue="55.2%" hightValue="117px" />
             <OtherDesign imageId={2} displayValue="block" topValue="29%" leftValue="5%" hightValue="70px" />
             <OtherDesign imageId={2} displayValue="none" topValue="79%" leftValue="35%" hightValue="90px" />
             <Box component="img" src="myimage.png" sx={{

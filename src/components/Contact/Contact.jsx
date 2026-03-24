@@ -26,7 +26,10 @@ export default function Contact(){
                 <Box
                     sx={{
                         padding: "16px",
-                        width: "auto"
+                        width: "auto",
+                        border: "1px solid rgba(0,0,0,0.4)",
+                        borderRadius: "4px",
+                        boxShadow: "0 0 15px 1px rgba(0,0,0,0.2)"
                     }}
                 >
                     <Typography sx={h3style}>Lets Get In Touch</Typography>
