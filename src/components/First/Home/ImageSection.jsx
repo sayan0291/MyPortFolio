@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import OtherDesign from "../../OtherDesign/Otherdesign";
+import { fillRectangle,h5style,hiddenItems,pstyle } from "../../OtherDesign/Other"
 
 export default function ImageSection(){
 
@@ -10,9 +11,10 @@ export default function ImageSection(){
             alignItems: "center",
             height: "91.5vh",
             paddingTop: {
-                md: "50px",
-                sm : "0px"
-            }
+                xs: "0",
+                md: "50px"
+            },
+            gap: "5px"
         }}>
             <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="55%" hightValue="120px" />
             <OtherDesign imageId={1} displayValue="block" topValue="90%" leftValue="95%" hightValue="100px" />
@@ -26,37 +28,35 @@ export default function ImageSection(){
                 },
                 height: {
                     xs: "80%",
-                    md: "93%"
+                    md: "91%"
                 },
                 objectFit: "cover",
                 display: "block"
             }}/>
             <Box
                 sx={{
+                    ...hiddenItems,
                     display: {
-                        xs: "none",
+                        sm: "none",
                         md: "flex"
                     },
                     padding: "3px 10px",
-                    justifyContent: "center",
-                    alignItems: "center",
                     gap:"10px",
-                    border: "1px solid #ABB2BF",
+                    border: "1px solid #BECBD6",
                     "& .MuiTypography-root":{
                         fontFamily: "Fira Code",
                     }
                 }}
-            >   <Box sx={{width: "10px",height: "10px",bgcolor:"#C778DD"}}/>
+            >   <Box sx={{...fillRectangle,bgcolor: "#0000FF",borderRadius: "50%"}}/>
                 <Typography
                     sx={{
-                        fontSize: "15px",
+                        ...pstyle,
                         color: "#d1d6df"
                     }}
                 >Currently Working On</Typography>
                 <Typography
                     sx={{
-                        fontSize: "17px",
-                        color: "#FFFFFF"
+                        ...h5style
                     }}
                 >PORTFOLIO</Typography>
             </Box>

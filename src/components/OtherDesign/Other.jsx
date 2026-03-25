@@ -1,3 +1,11 @@
+//every page section
+export const pageSection = {
+    bgcolor: "#282C33",
+    position: "relative",
+    overflow: "hidden",
+}
+
+// first , about , contact
 export const sectionAlign = {
     display: "flex",
     flexDirection: {
@@ -13,10 +21,18 @@ export const sectionAlign = {
     padding: "20px 30px",
 }
 
-export const pageSection = {
-    bgcolor: "#282C33",
-    position: "relative",
-    overflow: "hidden",
+// some hidden cases about,image section
+export const hiddenItems = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+}
+
+
+export const fillRectangle = {
+    width: "10px",
+    height: "10px",
+    bgcolor:"#C778DD"
 }
 
 
@@ -82,7 +98,13 @@ export const h3style = {
 export const IconLinkButton = {
         fontFamily: "Open Sans",
         color: "#ABB2BF",
-        fontSize: "30px",
+        "& .MuiSvgIcon-root":{
+            fontSize: {
+                xs: "20px",
+                sm: "23px",
+                md: "26px"
+            }
+        },
         "&:hover":{
             boxShadow: "none",
             backgroundColor: "transparent"

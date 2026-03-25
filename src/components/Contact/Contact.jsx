@@ -1,7 +1,7 @@
 import { Box,Typography } from "@mui/material";
 import SectionHeading from "../OtherDesign/SectionHeading";
 import { MdEmail } from "react-icons/md";
-import { TbBrandLinkedinFilled } from "react-icons/tb";
+import { BsDiscord } from "react-icons/bs";
 import IconLink from "../IconLink/IconLink";
 import { h5style,h3style,pstyle,sectionAlign, pageSection } from "../OtherDesign/Other";
 
@@ -26,7 +26,6 @@ export default function Contact(){
                 <Box
                     sx={{
                         padding: "16px",
-                        width: "auto",
                         border: "1px solid rgba(0,0,0,0.4)",
                         borderRadius: "4px",
                         boxShadow: "0 0 15px 1px rgba(0,0,0,0.2)"
@@ -37,7 +36,6 @@ export default function Contact(){
                         sx={{
                             display: "flex",
                             flexDirection: "column",
-                            alignItems: "flex-start",
                             "& .MuiBox-root":{
                                 display: "flex",
                                 alignItems: "center",
@@ -49,15 +47,15 @@ export default function Contact(){
                     >
                         <Box>
                             <IconLink>
+                                <BsDiscord />
+                            </IconLink>
+                            <Typography>!sayan</Typography>
+                        </Box>
+                        <Box>
+                            <IconLink>
                                 {<MdEmail/>}
                             </IconLink>
                             <Typography>sayanghanta57@gmail.com</Typography>
-                        </Box>
-                        <Box>
-                            <IconLink href="https://www.linkedin.com/in/sayan-ghanta-b4376035a/">
-                                {<TbBrandLinkedinFilled/>}
-                            </IconLink>
-                            <Typography>Sayan Ghanta</Typography>
                         </Box>
                     </Box>
                 </Box>

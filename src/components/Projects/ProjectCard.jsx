@@ -1,9 +1,9 @@
-import { Box, Typography, IconButton, Button } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import SkillName from "../Skills/UseSkill"
 import IconLink from "../IconLink/IconLink"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { TbExternalLink } from "react-icons/tb";
-import { ProjectsDetails } from "../OtherDesign/Other";
+import { ProjectsDetails,hiddenItems } from "../OtherDesign/Other";
 
 
 export default function ProjectCard({projectId}) {
@@ -24,8 +24,8 @@ export default function ProjectCard({projectId}) {
 
       <Box
         sx={{
-          display: "flex",
-          alignItems: "center",
+          ...hiddenItems,
+          justifyContent: "",
           "& .MuiTypography-root":{
             fontSize: {
             xs: "15px",
@@ -37,20 +37,6 @@ export default function ProjectCard({projectId}) {
           }
         }}
       >
-        {/* <IconButton
-        sx={{
-          fontSize: {
-            xs: "45px",
-            sm: "50px",
-            "&:hover": {
-              boxShadow: "none",
-              backgroundColor: "transparent"
-            }
-          }
-        }}
-      >
-        {item.childrenIcon}
-      </IconButton> */}
         <Typography >{item.ProjectName}</Typography>
       </Box>
 

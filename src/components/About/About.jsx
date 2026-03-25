@@ -3,7 +3,7 @@ import SectionHeading from "../OtherDesign/SectionHeading"
 import AboutCard from './AboutCard'
 import OtherDesign from "../OtherDesign/Otherdesign"
 import OtherButton from '../OtherDesign/OtherButton'
-import { h5style,sectionAlign,pageSection } from '../OtherDesign/Other'
+import { h5style,sectionAlign,pageSection,hiddenItems,fillRectangle } from '../OtherDesign/Other'
 
 export default function About(){
 
@@ -20,20 +20,19 @@ export default function About(){
                     },
                 }
             }}>
-                <Box sx={{display: {xs: "none",sm: "flex"},justifyContent: "center",alignItems: "center"}} >
+                <Box sx={{...hiddenItems,display: {xs: "none",sm: "flex"}}} >
                     <AboutCard/>
                 </Box>
                 <Box sx={{
                     display: "flex",
                     flexDirection: "column",
-                    alignSelf: "center",
                     gap: "10px",
                     "& > .MuiTypography-root":{
                         ...h5style
                     }
                 }}>
             
-                    <Box sx={{width: "10px",height: "10px",bgcolor:"#C778DD"}}/>
+                    <Box sx={{...fillRectangle}}/>
                     <Typography>Hello, i’m Sayan!</Typography>
                     <Typography>I’m a self-taught front-end developer. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</Typography>
                     <Typography>Transforming my creativity and knowledge into a websites has been my passion . I always strive to learn about the newest technologies and frameworks.</Typography>
