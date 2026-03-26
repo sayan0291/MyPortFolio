@@ -21,6 +21,15 @@ export const sectionAlign = {
     padding: "20px 30px",
 }
 
+export const designerFont = {
+    fontWeight: "600",
+    color: "#6691a8",
+    fontSize: {
+        xs: "15px",
+        md: "18px"}
+    
+}
+
 // some hidden cases about,image section
 export const hiddenItems = {
     display: "flex",

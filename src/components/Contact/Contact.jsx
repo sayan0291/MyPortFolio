@@ -8,7 +8,7 @@ import { h5style,h3style,pstyle,sectionAlign, pageSection } from "../OtherDesign
 export default function Contact(){
 
     return(
-        <Box id="contact" sx={{
+        <Box sx={{
             ...pageSection
         }}> 
             <SectionHeading categories="contact-me" />

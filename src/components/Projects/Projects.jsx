@@ -8,7 +8,7 @@ import { pageSection } from "../OtherDesign/Other";
 export default function Projects() {
 
   return (
-    <Box id="projects" sx={{ ...pageSection }}>
+    <Box sx={{ ...pageSection }}>
       <OtherDesign imageId={2} displayValue="none" topValue="71%" leftValue="-48px" hightValue="150px" />
       <OtherDesign imageId={1} displayValue="none" topValue="70%" leftValue="-50px" hightValue="156px" />
       <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="95%" hightValue="90px" rotationAngle="10" />

@@ -8,7 +8,7 @@ import { h5style,sectionAlign,pageSection,hiddenItems,fillRectangle } from '../O
 export default function About(){
 
     return(
-        <Box id="about" sx={{ ...pageSection }}>
+        <Box sx={{ ...pageSection }}>
             <SectionHeading categories="about-me"/>
             <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="7%" hightValue="50px" />
             <Box sx={{

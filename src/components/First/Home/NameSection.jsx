@@ -2,6 +2,7 @@ import { Typography, Box } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconLink from "../../IconLink/IconLink"
+import {designerFont} from "../../OtherDesign/Other"
 
 export default function NameSection(){
 
@@ -62,12 +63,8 @@ export default function NameSection(){
                     }
                     }}>SAYAN GHANTA</Typography>
                 <Typography variant="p" sx={{
-                    fontWeight: "ExtraBold",
-                    color: "#6691a8",
-                    fontSize: {
-                        xs: "15px",
-                        md: "18px"
-                    }
+                    ...designerFont,
+                    fontFamily: "monospace",
                 }}>
                     Front-end Developer / UI Designer</Typography>
             </Box>
