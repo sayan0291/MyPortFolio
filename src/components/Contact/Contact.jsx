@@ -3,7 +3,7 @@ import SectionHeading from "../OtherDesign/SectionHeading";
 import { MdEmail } from "react-icons/md";
 import { BsDiscord } from "react-icons/bs";
 import IconLink from "../IconLink/IconLink";
-import { h5style,h3style,pstyle,sectionAlign, pageSection } from "../OtherDesign/Other";
+import { h5style,h3style,pstyle,sectionAlign, pageSection, flexAlignCenter, flexCenter } from "../OtherDesign/Other";
 
 export default function Contact(){
 
@@ -34,11 +34,8 @@ export default function Contact(){
                     <Typography sx={h3style}>Lets Get In Touch</Typography>
                     <Box
                         sx={{
-                            display: "flex",
-                            flexDirection: "column",
                             "& .MuiBox-root":{
-                                display: "flex",
-                                alignItems: "center",
+                                ...flexAlignCenter
                             },
                             "& .MuiTypography-root":{
                                 ...pstyle

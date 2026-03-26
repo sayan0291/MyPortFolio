@@ -1,19 +1,21 @@
 import Navbar from './components/Navbar/Navbar';
-import First from './components/First/First'
-import About from './components/About/About'
-import Contact from './components/Contact/Contact';
+import Home from './components/First/Home/Home';
 import Footer from './components/Footer/Footer';
 import Projects from "./components/Projects/Projects"
+import AboutContent from './components/About/AboutContent';
+import {Routes,Route} from "react-router-dom"
 
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <First />
-      <About />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path='/aboutdetail' element={<AboutContent />}/>
+        <Route path='/projectdetail' element={<Projects />}/>
+      </Routes>
       <Footer />
     </>
   );

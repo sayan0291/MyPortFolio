@@ -1,15 +1,12 @@
 import {Box,Typography} from '@mui/material'
+import { flexAlignCenter } from './Other'
 
 export default function SectionHeading(props){
 
     return(
             <Box sx={{
-                width: "auto",
-                display: "flex",
-                alignItems: "center",
-                bgcolor: "transparent",
+                ...flexAlignCenter,
                 marginLeft: "10px",
-                gap: "5px",
                 padding: {
                     xs: "10px 0",
                     md: "20px 30px",

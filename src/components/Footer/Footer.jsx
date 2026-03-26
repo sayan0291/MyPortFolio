@@ -1,5 +1,5 @@
 import { Box,Typography } from "@mui/material"
-import {sectionAlign,h3style, pstyle} from "../OtherDesign/Other.jsx"
+import {sectionAlign,h3style, pstyle, flexBetween,flexAlignCenter, flexCenter} from "../OtherDesign/Other.jsx"
 import { VscGithubInverted } from "react-icons/vsc";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import IconLink from "../IconLink/IconLink.jsx";
@@ -14,14 +14,11 @@ export default function Footer(){
             borderTop: "1px solid rgba(216, 198, 198, 0.5)",
         }}>
             <Box sx={{
-                display: "flex",
-                justifyContent: "space-between"
+                ...flexBetween
             }}>
                 <Box
                     sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 1
+                        ...flexAlignCenter
                     }}>
                     <Box component="img" src="/Project/Logo.svg"/>                    
                     <Typography sx={{
@@ -31,9 +28,7 @@ export default function Footer(){
                         }}>Web designer and front-end developer</Typography>
                 </Box>
                 <Box sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems:"start"
+                    ...flexCenter
                 }}>
                     <Typography sx={{...h3style,color: "#FFFFFF"}}>Media</Typography>
                     <Box>

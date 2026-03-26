@@ -5,6 +5,36 @@ export const pageSection = {
     overflow: "hidden",
 }
 
+export const flexCenter = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "10px",
+}
+
+export const flexAlignCenter = {
+    display: "flex",
+    alignItems: "center",
+    gap: "10px"
+}
+
+export const flexBetween = {
+    display: "flex",
+    justifyContent: "space-between"
+}
+
+//Nav Button
+export const NavButton = {
+    color: "#ABB2BF",
+    fontFamily: "Fira Code",
+    fontWeight: "400",
+    fontSize: {
+        xs: "15px",
+        md: "13px",
+        lg: "14px"
+    }
+}
+
 // first , about , contact
 export const sectionAlign = {
     display: "flex",
@@ -46,7 +76,7 @@ export const fillRectangle = {
 
 
 export const imagestyle = {
-        width: {xs: "40px",sm: "50px",md: "60px"}
+        width: {xs: "20px",sm: "25px",md: "30px"}
     }
 
 export const pstyle = {
@@ -135,6 +165,7 @@ import maggiImage from "/Project/maggi-logo.svg"
 import codeImage from "/Project/code-editor.png"
 import collegeImage from "/Project/CollegeProject.svg"
 import portfolioImage from "/Project/CollegeProject.svg"
+import { color } from "motion"
 
 export const ProjectsDetails = [
     {id:1,value:"01",ProjectName:"Maggi Page",imageLink: maggiImage,gitLink:"https://github.com/sayan0291/maggi",publicURL:"",childrenIcon: <GiNoodles color="#FFAA33 " />,skillNames: ["html","css","js"]},

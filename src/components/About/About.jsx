@@ -3,7 +3,7 @@ import SectionHeading from "../OtherDesign/SectionHeading"
 import AboutCard from './AboutCard'
 import OtherDesign from "../OtherDesign/Otherdesign"
 import OtherButton from '../OtherDesign/OtherButton'
-import { h5style,sectionAlign,pageSection,hiddenItems,fillRectangle } from '../OtherDesign/Other'
+import { h5style,sectionAlign,pageSection,hiddenItems,fillRectangle, flexCenter } from '../OtherDesign/Other'
 
 export default function About(){
 
@@ -24,9 +24,8 @@ export default function About(){
                     <AboutCard/>
                 </Box>
                 <Box sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "10px",
+                    ...flexCenter,
+                    alignItems: "",
                     "& > .MuiTypography-root":{
                         ...h5style
                     }

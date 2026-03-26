@@ -1,20 +1,17 @@
 import { Box, Typography } from "@mui/material";
 import OtherDesign from "../../OtherDesign/Otherdesign";
-import { fillRectangle,h5style,hiddenItems,pstyle } from "../../OtherDesign/Other"
+import { fillRectangle,flexCenter,h5style,hiddenItems,pstyle } from "../../OtherDesign/Other"
 
 export default function ImageSection(){
 
     return(
         <Box component="div" sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            ...flexCenter,
             height: "91.5vh",
             paddingTop: {
                 xs: "0",
                 md: "50px"
-            },
-            gap: "5px"
+            }
         }}>
             <OtherDesign imageId={1} displayValue="none" topValue="20%" leftValue="55%" hightValue="120px" />
             <OtherDesign imageId={1} displayValue="block" topValue="90%" leftValue="95%" hightValue="100px" />

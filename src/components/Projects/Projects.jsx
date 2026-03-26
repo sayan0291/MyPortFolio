@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import SectionHeading from "../OtherDesign/SectionHeading"
 import OtherButton from "../OtherDesign/OtherButton"
 import OtherDesign from "../OtherDesign/Otherdesign"
-import { pageSection } from "../OtherDesign/Other";
+import { flexBetween, pageSection } from "../OtherDesign/Other";
 
 export default function Projects() {
 
@@ -15,8 +15,7 @@ export default function Projects() {
 
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
+          ...flexBetween
         }}
       >
         <SectionHeading categories="projects" />

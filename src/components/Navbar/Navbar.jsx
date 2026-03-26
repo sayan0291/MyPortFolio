@@ -1,13 +1,13 @@
 import {useState,useEffect} from "react";
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer } from "@mui/material";
-import {Link} from "react-scroll"
+import { NavLink } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close'
-import { sectionAlign } from "../OtherDesign/Other";
+import { sectionAlign,NavButton, imagestyle, flexCenter } from "../OtherDesign/Other";
 const sectionArray = [
-  {id:1,toPath: "about",name: "About"},
-  {id:3,toPath: "projects",name: "Projects"},
-  {id:4,toPath: "contact",name: "Contact"}
+  {id:1,toPath: "/home",name: "Home"},
+  {id:2,toPath: "/about",name: "About"},
+  {id:3,toPath: "/projects",name: "Projects"}
 ]
 
 export default function Navbar() {
@@ -31,38 +31,27 @@ export default function Navbar() {
                     transition: "transform 0.4s ease,background-color 0.4s ease",
                     willChange: "transform",
                     }} >
-        <Toolbar >
-          <Typography variant="h6" sx={{ flexGrow: 1,color: "black" }}>
-            PORTFOLIO
-          </Typography>
+        <Toolbar sx={{display: "flex",justifyContent: "space-between"}}>
+          <Box>
+            <Box component="img" src="Project/Logo_Black.svg" sx={{...imagestyle,flexGrow: 1}} />
+          </Box>
 
           <Box sx={{
                   display: {
                     md: "flex",
                     xs: "none"
-                  },
-                  "& .MuiButton-root": {
-                      fontSize: {
-                          md: "13px",
-                          lg: "16px"
-                      },
-                      color: "#FFFFFF",
-                      fontFamily:"Montserrat",
                   }
               }}>
               {sectionArray.map((obj,index) =>
                   (
-                    <Link
+                    <NavLink
                       key={obj.id}
                       to={obj.toPath}
-                      smooth={true}
                       duration={500}
                       offset={-63}
-                      spy={true}
-                      activeClass="active"
                     >
-                        <Button color="inherit">{obj.name}</Button>
-                    </Link>
+                        <Button sx={{...NavButton}} color="inherit">{obj.name}</Button>
+                    </NavLink>
                   )
               )}
           </Box>
@@ -91,7 +80,7 @@ export default function Navbar() {
             ...sectionAlign,
             flexDirection: "row"
           }}>
-            <Typography variant="h6">PORTFOLIO</Typography>
+            <Box component="img" src="Project/Logo.svg" />
 
             <IconButton onClick={() => setOpen(false)} sx={{ color: "white" }}>
               <CloseIcon />
@@ -100,30 +89,18 @@ export default function Navbar() {
         <Box sx={{ height: "1px", backgroundColor: "gray" }} />
         <Box sx={{
             flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 2,
-            "& .MuiButton-root": {
-              color: "white",
-              fontSize: {
-                xs: "13px",
-                sm: "15px"
-              }
-            }
+            ...flexCenter,
+            gap: 2
           }}>
               {sectionArray.map((obj,index) => 
-                (<Link 
+                (<NavLink 
                   key={obj.id}
                   to={obj.toPath}
-                  smooth={true}
                   duration={500}
-                  spy={true}
-                  activeClass="active"
                   offset={-70}
                   >
-                  <Button onClick={() => setOpen(false)}>{obj.name}</Button>
-                </Link>)
+                  <Button sx={{...NavButton}} onClick={() => setOpen(false)}>{obj.name}</Button>
+                </NavLink>)
               )}
           </Box>
 
